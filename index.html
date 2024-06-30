@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSS-Datei verlinken -->
+</head>
+<body> 
+    <!-- Teile den Taschenrechner in mehrere Divisions für einfachere Bearbeitung und Übersichtlichkeit-->
+    <div id="calc">
+        <input id="display" readonly> <!-- erstelle einen Input, dass nur abgelesen werden kann (als Display benutzt)-->
+        <div id="keys">
+            <!-- Herstellung von Knöpfen für den Taschenrechner-->
+            <button onclick="display('+')" class="operator">+</button> <!-- geben die arithmetischen Operatoren eine bestimmte Klasse zur Unterscheidung-->
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button onclick="display('-')" class="operator">-</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button onclick="display('*')" class="operator">*</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button onclick="display('/')" class="operator">/</button>
+            <button onclick="display('0')">0</button>
+            <button onclick="display('.')" class="eq">.</button>
+            <button onclick="calculate()" class="eq">=</button>
+            <button onclick="clearDisp()" class="operator">C</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script> <!-- JS-Datei verlinken -->
+</body>
+</html>
